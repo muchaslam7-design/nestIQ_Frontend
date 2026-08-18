@@ -1,0 +1,92 @@
+import React from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
+import type { NavItem } from "../types";
+
+interface NavbarProps {
+  items: NavItem[];
+  callNumber: string;
+  isAuthenticated: boolean;
+  onLogout: () => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({
+  items,
+  callNumber,
+  isAuthenticated,
+  onLogout,
+}) => {
+  const navigate = useNavigate();
+
+  return (
+    <header className="w-full bg-[#07294d] text-white">
+      {/* Main Navigation */}
+      <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+        {/* Professional Minimalist Logo Section */}
+        <div
+          className="flex items-center gap-3 cursor-pointer group"
+          onClick={() => navigate("/")}
+        >
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#0099ff] to-[#38bdf8] flex items-center justify-center text-white shadow-md shadow-[#0099ff]/20 transition-transform group-hover:scale-105">
+            <FaHome size={20} />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-2xl font-bold tracking-tight text-white font-sans leading-none">
+              Nest<span className="text-[#0099ff]">IQ</span>
+            </span>
+            <span className="text-[10px] uppercase tracking-widest text-gray-400 font-medium mt-1">
+              Real Estate
+            </span>
+          </div>
+        </div>
+
+        {/* Nav Links with Active State Highlighting */}
+        <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+          {items.map((item, index) => (
+            <NavLink
+              key={index}
+              to={item.href}
+              className={({ isActive }) =>
+                `transition-colors pb-1 ${
+                  isActive
+                    ? "text-[#0099ff] font-semibold border-b-2 border-[#0099ff]"
+                    : "text-gray-300 hover:text-white"
+                }`
+              }
+            >
+              {item.label}
+            </NavLink>
+          ))}
+        </nav>
+
+        {/* Call Info & Dynamic Auth Button */}
+        <div className="flex items-center gap-6">
+          <div className="hidden lg:block text-right">
+            <span className="text-xs text-gray-400 block font-normal">
+              Call Us:
+            </span>
+            <span className="text-sm font-semibold tracking-wide text-white">
+              {callNumber}
+            </span>
+          </div>
+
+          {isAuthenticated ? (
+            <button
+              onClick={onLogout}
+              className="bg-red-500 hover:bg-red-600 text-white px-6 py-2.5 rounded text-sm font-medium transition-colors shadow"
+            >
+              Logout
+            </button>
+          ) : (
+            <button
+              onClick={() => navigate("/login")}
+              className="bg-[#0099ff] hover:bg-[#0088ee] text-white px-6 py-2.5 rounded text-sm font-medium transition-colors shadow"
+            >
+              Sign In
+            </button>
+          )}
+        </div>
+      </div>
+    </header>
+  );
+};
