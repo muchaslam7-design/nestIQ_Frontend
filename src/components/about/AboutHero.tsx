@@ -1,5 +1,4 @@
 import React from "react";
-import { SearchBar } from "../SearchBar";
 
 export const AboutHero: React.FC = () => {
   return (

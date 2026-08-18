@@ -1,6 +1,4 @@
-import React from "react";
 import { Hero } from "../components/Hero";
-import { SearchBar } from "../components/SearchBar";
 import { propertyData } from "../data/mockData";
 
 export default function Home() {

@@ -1,8 +1,6 @@
 import React from "react";
 import { PropertyHero } from "../components/PropertyHero";
-import { SearchBar } from "../components/SearchBar";
 import { propertiesList } from "../data/mockData";
-import { Navbar } from "../components/Navbar";
 
 export const PropertyPage: React.FC = () => {
   return (
