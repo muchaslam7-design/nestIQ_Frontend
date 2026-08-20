@@ -1,4 +1,4 @@
-# NestIQ | Real Estate AI Frontend
+# 🏡 NestIQ | Real Estate AI Frontend
 
 A sleek, glassmorphic frontend application built for the **nestIQ** real estate platform. Designed to provide users with an intuitive experience for AI-powered property valuation and advanced real estate search.
 
@@ -34,3 +34,5 @@ A sleek, glassmorphic frontend application built for the **nestIQ** real estate 
 1. Clone the repository:
    ```bash
    git clone https://github.com/muchaslam7-design/nestIQ_Frontend.git
+### 🔗 Live Demo
+https://nest-iq-frontend-8lqf.vercel.app/
