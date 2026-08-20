@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaBars, FaTimes } from "react-icons/fa";
 import type { NavItem } from "../types";
 
 interface NavbarProps {
@@ -17,6 +17,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onLogout,
 }) => {
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="w-full bg-[#07294d] text-white">
@@ -40,7 +41,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
         </div>
 
-        {/* Nav Links with Active State Highlighting */}
+        {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           {items.map((item, index) => (
             <NavLink
@@ -59,8 +60,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           ))}
         </nav>
 
-        {/* Call Info & Dynamic Auth Button */}
-        <div className="flex items-center gap-6">
+        {/* Call Info & Dynamic Auth Button (Desktop) */}
+        <div className="hidden md:flex items-center gap-6">
           <div className="hidden lg:block text-right">
             <span className="text-xs text-gray-400 block font-normal">
               Call Us:
@@ -86,7 +87,61 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           )}
         </div>
+
+        {/* Mobile Hamburger Button */}
+        <div className="flex md:hidden items-center gap-4">
+          {isAuthenticated ? (
+            <button
+              onClick={onLogout}
+              className="bg-red-500 text-white px-3 py-1.5 rounded text-xs font-medium"
+            >
+              Logout
+            </button>
+          ) : (
+            <button
+              onClick={() => navigate("/login")}
+              className="bg-[#0099ff] text-white px-3 py-1.5 rounded text-xs font-medium"
+            >
+              Sign In
+            </button>
+          )}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-white focus:outline-none p-2"
+          >
+            {isOpen ? <FaSizeIcon size={24} /> : <FaBars size={24} />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isOpen && (
+        <div className="md:hidden bg-[#07294d] border-t border-gray-700 px-4 pt-4 pb-6 flex flex-col gap-4">
+          {items.map((item, index) => (
+            <NavLink
+              key={index}
+              to={item.href}
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                `text-sm font-medium py-2 ${
+                  isActive ? "text-[#0099ff] font-semibold" : "text-gray-300"
+                }`
+              }
+            >
+              {item.label}
+            </NavLink>
+          ))}
+          <div className="text-xs text-gray-400 pt-2 border-t border-gray-700">
+            Call Us:{" "}
+            <span className="text-white font-semibold">{callNumber}</span>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
+
+// Helper component for close icon
+function FaSizeIcon({ size }: { size: number }) {
+  return <FaTimes size={size} />;
+}
