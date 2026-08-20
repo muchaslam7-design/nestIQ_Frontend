@@ -65,7 +65,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
     <div
       className="min-h-screen w-full flex flex-col justify-center py-12 sm:px-6 lg:px-8 bg-cover bg-center relative"
       style={{
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=2000')`,
+        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('/image/photo-1542314831-068cd1dbfeeb.avif')`,
       }}
     >
       <div className="sm:mx-auto sm:w-full sm:max-w-md relative z-10">

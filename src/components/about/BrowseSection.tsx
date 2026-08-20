@@ -23,7 +23,7 @@ export const BrowseSection: React.FC = () => {
       </div>
       <div className="rounded-lg overflow-hidden shadow-lg">
         <img
-          src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop"
+          src="/image/photo-1618221195710-dd6b41faaea6.avif"
           alt="Interior view"
           className="w-full h-[400px] object-cover"
         />

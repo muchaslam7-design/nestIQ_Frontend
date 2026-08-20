@@ -100,22 +100,22 @@ export const BlogList: React.FC = () => {
                 {
                   title: "From life was fish...",
                   date: "January 12, 2019",
-                  img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=150&auto=format&fit=crop",
+                  img: "/image/photo-1560518883-ce09059eeffa.avif",
                 },
                 {
                   title: "The Amazing Hubble",
                   date: "02 Hours ago",
-                  img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=150&auto=format&fit=crop",
+                  img: "/image/photo-1512917774080-9991f1c4c750.avif",
                 },
                 {
                   title: "Astronomy Or Astrology",
                   date: "03 Hours ago",
-                  img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=150&auto=format&fit=crop",
+                  img: "/image/photo-1600596542815-ffad4c1539a9.avif",
                 },
                 {
                   title: "Asteroids telescope",
                   date: "01 Hours ago",
-                  img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=150&auto=format&fit=crop",
+                  img: "/image/photo-1618221195710-dd6b41faaea6.avif",
                 },
               ].map((post, idx) => (
                 <div

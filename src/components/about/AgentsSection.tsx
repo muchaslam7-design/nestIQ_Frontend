@@ -4,23 +4,19 @@ export const AgentsSection: React.FC = () => {
   const agents = [
     {
       name: "Nick R. Bocker",
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=500&auto=format&fit=crop",
+      image: "/image/photo-1534528741775-53994a69daeb.avif",
     },
     {
       name: "Jimmy Changa",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=500&auto=format&fit=crop",
+      image: "/image/photo-1507003211169-0a1dd7228f2d.avif",
     },
     {
       name: "Buster Hyman",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=500&auto=format&fit=crop",
+      image: "/image/photo-1500648767791-00dcc994a43e.avif",
     },
     {
       name: "Buster Hyman",
-      image:
-        "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=500&auto=format&fit=crop",
+      image: "/image/photo-1492562080023-ab3db95bfbce.avif",
     },
   ];
 

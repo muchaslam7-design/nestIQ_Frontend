@@ -74,7 +74,7 @@ export const RegisterPage: React.FC = () => {
     <div
       className="min-h-screen w-full flex items-center justify-center relative py-12 px-4 sm:px-6 lg:px-8 bg-cover bg-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=2000')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/image/photo-1600596542815-ffad4c1539a9.avif')`,
       }}
     >
       {/* Main Form Container */}

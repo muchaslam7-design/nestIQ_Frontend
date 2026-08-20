@@ -6,7 +6,7 @@ export const HelpSection: React.FC = () => {
     <div
       className="relative py-24 bg-cover bg-center"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop')`,
+        backgroundImage: `url('/image/photo-1600607687939-ce8a6c25118c.avif')`,
       }}
     >
       <div className="absolute inset-0 bg-black/60" />

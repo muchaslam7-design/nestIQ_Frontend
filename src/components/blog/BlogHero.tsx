@@ -7,7 +7,7 @@ export const BlogHero: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1920&auto=format&fit=crop')`,
+          backgroundImage: `url('/image/photo-1600596542815-ffad4c1539a9.avif')`,
         }}
       >
         <div className="absolute inset-0 bg-black/50" />

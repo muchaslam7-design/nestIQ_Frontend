@@ -7,8 +7,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ data }) => {
   // Yahan direct high-quality rustic nature/cabin image ka link laga diya hai
-  const bgImage =
-    "https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=1920&auto=format&fit=crop";
+  const bgImage = "/image/photo-1510798831971-661eb04b3739.avif";
 
   return (
     <div className="relative w-full h-[600px] overflow-hidden">

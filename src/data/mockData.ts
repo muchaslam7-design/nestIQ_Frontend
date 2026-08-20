@@ -16,8 +16,7 @@ export const propertyData: PropertyDetails = {
   subtitle:
     "Get started by choosing from one of our pre-built page templates to showcase your properties",
   price: 3272,
-  imageUrl:
-    "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=2000&q=80",
+  imageUrl: "/image/photo-1510798831971-661eb04b3739.avif",
   callNumber: "+10 (78) 356 3276",
 };
 
@@ -31,8 +30,7 @@ export const propertiesList = [
     beds: 2,
     baths: 2,
     sqft: 1050,
-    imageUrl:
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/image/photo-1522708323590-d24dbb6b0267.avif",
   },
   {
     id: 2,
@@ -43,8 +41,7 @@ export const propertiesList = [
     beds: 2,
     baths: 2,
     sqft: 1050,
-    imageUrl:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/image/photo-1497366216548-37526070297c.avif",
   },
   {
     id: 3,
@@ -55,8 +52,7 @@ export const propertiesList = [
     beds: 2,
     baths: 2,
     sqft: 1050,
-    imageUrl:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/image/photo-1512917774080-9991f1c4c750.avif",
   },
   {
     id: 4,
@@ -67,8 +63,7 @@ export const propertiesList = [
     beds: 2,
     baths: 2,
     sqft: 1050,
-    imageUrl:
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/image/photo-1502672260266-1c1ef2d93688.avif",
   },
   {
     id: 5,
@@ -79,8 +74,7 @@ export const propertiesList = [
     beds: 2,
     baths: 2,
     sqft: 1050,
-    imageUrl:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/image/photo-1504384308090-c894fdcc538d.avif",
   },
   {
     id: 6,
@@ -91,8 +85,7 @@ export const propertiesList = [
     beds: 2,
     baths: 2,
     sqft: 1050,
-    imageUrl:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "/image/photo-1600596542815-ffad4c1539a9.avif",
   },
 ];
 
@@ -102,8 +95,7 @@ export const blogsList = [
     title: "Google inks pact for new 35-storey office",
     excerpt:
       "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    image: "/image/photo-1600585154340-be6161a56a0c.avif",
     date: "15 Jan",
   },
   {
@@ -111,8 +103,7 @@ export const blogsList = [
     title: "Modern interior design for luxury living",
     excerpt:
       "Transform your living spaces with these latest interior design aesthetics that define luxury and comfort in 2026.",
-    image:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+    image: "/image/photo-1600596542815-ffad4c1539a9.avif",
     date: "12 Feb",
   },
   {
@@ -120,8 +111,7 @@ export const blogsList = [
     title: "Why property investment is booming in 2026",
     excerpt:
       "Expert analysis on why this year is the best time to diversify your portfolio with high-yield real estate assets.",
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80", // Yeh link bilkul stable hai
+    image: "/image/photo-1560518883-ce09059eeffa.avif", // Yeh link bilkul stable hai
     date: "05 Mar",
   },
 ];

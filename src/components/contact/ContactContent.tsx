@@ -87,7 +87,7 @@ export const ContactContent: React.FC = () => {
         {/* Right Side: Stunning Immersive Visual Banner with New Background Image */}
         <div className="relative h-[480px] rounded-3xl overflow-hidden shadow-2xl group">
           <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop"
+            src="/image/photo-1497366216548-37526070297c.avif"
             alt="Modern Office Building"
             className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
           />
